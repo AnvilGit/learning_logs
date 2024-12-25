@@ -5,7 +5,8 @@
   <form action="{% url 'learning_logs:new_entry' topic.id %}" method='post'>
     {% csrf_token %}
     {{ form.as_p }}
-    <button name='submit'>Add entry</button>
+    <button class="btn btn-success" name='submit'>Add entry</button>
+    <a class="btn btn-primary" href="{% url 'learning_logs:topic' topic.id %}">Back</a>
   </form>
 
 {% endblock content %}

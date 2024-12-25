@@ -90,3 +90,36 @@ def edit_entry(request, entry_id):
 
     context = {'entry': entry, 'topic': topic, 'form': form}
     return render(request, 'learning_logs/edit_entry.html', context)
+
+
+@login_required
+def delete_entry(request, entry_id):
+    """Delete an entry."""
+    entry = Entry.objects.get(id=entry_id)
+    topic = entry.topic
+    if topic.owner != request.user:
+        raise Http404
+
+    if request.method == 'POST':
+        entry.delete()
+        return redirect('learning_logs:topic', topic_id=topic.id)
+
+    # Render a confirmation page for GET request
+    context = {'entry': entry, 'topic': topic}
+    return render(request, 'learning_logs/delete_entry.html', context)
+
+
+@login_required
+def delete_topic(request, topic_id):
+    """Delete a topic."""
+    topic = Topic.objects.get(id=topic_id) # Fetch the topic to be deleted
+    if topic.owner != request.user:
+        raise Http404
+
+    if request.method == 'POST':
+        topic.delete()
+        return redirect('learning_logs:topics')
+
+    # Render a confirmation page for GET request
+    context = {'topic': topic}
+    return render(request, 'learning_logs/delete_topic.html', context)
