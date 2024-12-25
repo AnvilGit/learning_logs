@@ -84,8 +84,12 @@ WSGI_APPLICATION = 'learning_log.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(conn_max_age=600, ssl_require=True)
+    'default': dj_database_url.config('postgres://username:password@hostname:port/dbname',
+                                      conn_max_age=600, ssl_require=True)
 }
+
+DATABASES['default'] = dj_database_url.parse(
+    "postgresql://learning_log_db_tdhm_user:txQAA9RQkNCXNA42Gs6UaMPMoPrwMD9z@dpg-ctm0qmd2ng1s73b9en9g-a.frankfurt-postgres.render.com/learning_log_db_tdhm")
 
 
 # Password validation
