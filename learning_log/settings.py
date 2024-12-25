@@ -27,7 +27,7 @@ SECRET_KEY = '9cpo85q*bax#w&kzmirb+j-0=zptccg6jm!!l^p)ar_ng*o*up'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['learning_logs.onrender.com']
+ALLOWED_HOSTS = ['learning-logs-fnta.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
