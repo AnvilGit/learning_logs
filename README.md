@@ -47,7 +47,7 @@ learning_log/
 │   ├── urls.py
 │   └── wsgi.py
 │
-├── db.sqlite3            # SQLite database (generated)
+├── db.sqlite3            # SQLite database on Development, PostgreSQL on production 
 └── manage.py
 ```
 
