@@ -113,7 +113,6 @@ python manage.py runserver
 Live Application URL:
 
 The Application is deployed in https://crime-data-explorer.netlify.app
-👉 Click on the link to see the application
  
 
 ---
