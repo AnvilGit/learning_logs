@@ -56,7 +56,7 @@ learning_log/
 ## ⚙️ Requirements
 
 * Python 3.x
-* Django 2.x (project built on Django 2.1.7)
+* Django 5.x (project built on Django 5.1.4)
 * django-bootstrap3 (for UI styling)
 
 Install packages:
