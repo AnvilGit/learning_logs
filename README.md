@@ -110,8 +110,11 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-Access app at:
-👉 [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+Live Application URL:
+
+The Application is deployed in https://crime-data-explorer.netlify.app
+👉 Click on the link to see the application
+ 
 
 ---
 
