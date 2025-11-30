@@ -89,7 +89,7 @@ DATABASES = {
 }
 
 DATABASES['default'] = dj_database_url.parse(
-    "postgresql://learning_log_db_tdhm_user:txQAA9RQkNCXNA42Gs6UaMPMoPrwMD9z@dpg-ctm0qmd2ng1s73b9en9g-a.frankfurt-postgres.render.com/learning_log_db_tdhm")
+    "postgresql://learning_log_db_g24x_user:ZciSY5z7ePnfIX27G1imwP108xTt0WtU@dpg-d4lurb2li9vc73egv2a0-a/learning_log_db_g24x")
 
 
 # Password validation
