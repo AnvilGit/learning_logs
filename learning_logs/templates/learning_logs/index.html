@@ -1,0 +1,20 @@
+{% extends "learning_logs/base.html" %}
+
+{% block header %}
+<div class='jumbotron'>
+    <h1>Reserve a Space for Your Learning</h1>
+</div>
+{% endblock header %}
+
+{% block content %}
+<h2>
+    <a href="{% url 'users:register' %}">Register an account</a> to create your own Learning Log.
+</h2>
+<h2>
+   A Learning Log is your personal space to reflect on your thoughts, questions, and progress as you explore new knowledge and skills. Learning is a journey, and your log becomes a valuable record of how you grow and adapt along the way. It’s not just about what you learn—it’s about how you learn, what challenges you overcome, and the insights you discover.
+
+</h2>
+<h2>
+    Begin your journey now - your Learning Log is waiting
+</h2>
+{% endblock content %}
