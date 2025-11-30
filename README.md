@@ -65,8 +65,6 @@ Install packages:
 pip install -r requirements.txt
 ```
 
-(If you need a ready `requirements.txt`, I can generate one.)
-
 ---
 
 ## 🛠 Installation & Setup
@@ -89,19 +87,7 @@ venv\Scripts\activate           # Windows
 ### 3. Install Dependencies
 
 ```
-pip install django django-bootstrap3
-```
-
-### 4. Run Database Migrations
-
-```
-python manage.py migrate
-```
-
-### 5. Create Superuser (optional)
-
-```
-python manage.py createsuperuser
+pip install -r requirements.txt
 ```
 
 ### 6. Start Development Server
