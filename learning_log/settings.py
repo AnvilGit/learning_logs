@@ -14,7 +14,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "dev-secret-key") #'ie76492904c922005c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", "") != "False" # DEBUG = True
 
-ALLOWED_HOSTS = ['learning-logs-sopi.onrender.com'] # replace with render domain later
+ALLOWED_HOSTS = ['learning-logs-sopi.onrender.com','localhost','127.0.0.1'] # replace with render domain later
 
 # Application definition
 
@@ -98,13 +98,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
@@ -119,3 +115,4 @@ LOGIN_URL = '/users/login/'
 
 # Settings for django-bootstrap3
 BOOTSTRAP3 = {'include_jquery': True, }
+
