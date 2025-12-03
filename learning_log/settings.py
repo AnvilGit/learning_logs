@@ -25,7 +25,7 @@ SECRET_KEY = 'i=5it2s(n=6o(ej0n!o_-d3o-#ze7ab1b#c863ra*sob&5#92h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['learning-logs-sopi.onrender.com']
 
 # Application definition
 
@@ -128,3 +128,4 @@ LOGIN_URL = '/users/login/'
 
 # Settings for django-bootstrap3
 BOOTSTRAP3 = {'include_jquery': True, }
+
