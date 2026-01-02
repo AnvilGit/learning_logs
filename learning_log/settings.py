@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'i=5it2s(n=6o(ej0n!o_-d3o-#ze7ab1b#c863ra*sob&5#92h'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True #Set this to false on deployment
 
 ALLOWED_HOSTS = []
 
@@ -125,3 +125,4 @@ LOGIN_URL = '/users/login/'
 
 # Settings for django-bootstrap3
 BOOTSTRAP3 = {'include_jquery': True, }
+
