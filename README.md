@@ -98,7 +98,7 @@ python manage.py runserver
 
 Live Application URL:
 
-The Application is deployed in https://crime-data-explorer.netlify.app
+The Application is deployed in https://learning-logs-sopi.onrender.com/
  
 
 ---
