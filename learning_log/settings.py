@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'i=5it2s(n=6o(ej0n!o_-d3o-#ze7ab1b#c863ra*sob&5#92h'
+SECRET_KEY = '45bc0f730976fd0e8a7cc18dc50328e9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", "False") == "True"
@@ -133,5 +133,6 @@ LOGIN_URL = '/users/login/'
 
 # Settings for django-bootstrap3
 BOOTSTRAP3 = {'include_jquery': True, }
+
 
 
