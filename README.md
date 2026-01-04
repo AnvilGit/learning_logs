@@ -81,7 +81,7 @@ cd learning-log
 ```
 python -m venv myenv
 source venv/bin/activate        # macOS/Linux
-venv\Scripts\activate           # Windows
+myenvenv\Scripts\activate           # Windows
 ```
 
 ### 3. Install Dependencies
