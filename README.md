@@ -79,7 +79,7 @@ cd learning-log
 ### 2. Create a Virtual Environment
 
 ```
-python -m venv venv
+python -m venv myenv
 source venv/bin/activate        # macOS/Linux
 venv\Scripts\activate           # Windows
 ```
