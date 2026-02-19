@@ -83,7 +83,8 @@ WSGI_APPLICATION = 'learning_log.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.getenv("DATABASE_URL")
+        conn_max_age=600,
+        ssl_require=True)
     )
 }
 
@@ -133,6 +134,7 @@ LOGIN_URL = '/users/login/'
 
 # Settings for django-bootstrap3
 BOOTSTRAP3 = {'include_jquery': True, }
+
 
 
 
